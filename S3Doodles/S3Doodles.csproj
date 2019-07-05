@@ -10,4 +10,10 @@
     <PackageReference Include="AWSSDK.S3" Version="3.3.103" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Tiger-Sambar-09.03.2013-10.40PM.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
