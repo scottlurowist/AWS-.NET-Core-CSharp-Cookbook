@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3Doodles", "S3Doodles\S3Doodles.csproj", "{F6CEFF3E-2AD6-43D6-BF7F-FB8374E31638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdaDoodles", "LamdaDoodles\LamdaDoodles.csproj", "{2E8EFECE-970C-4F1D-AF4F-A77EF50C489C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F6CEFF3E-2AD6-43D6-BF7F-FB8374E31638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6CEFF3E-2AD6-43D6-BF7F-FB8374E31638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6CEFF3E-2AD6-43D6-BF7F-FB8374E31638}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2E8EFECE-970C-4F1D-AF4F-A77EF50C489C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E8EFECE-970C-4F1D-AF4F-A77EF50C489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E8EFECE-970C-4F1D-AF4F-A77EF50C489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E8EFECE-970C-4F1D-AF4F-A77EF50C489C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -45,7 +45,7 @@ namespace S3Doodles
         {
             ListObjectsResponse response =
                 await client.ListObjectsAsync(BucketName, "AWS Cookbook", token);
-
+            
             Console.WriteLine($"\nListing the contents of prefix 'AWS Cookbook'\n");
 
             foreach (var resultS3Object in response.S3Objects)
@@ -65,7 +65,7 @@ namespace S3Doodles
             };
 
             PutObjectResponse response = await client.PutObjectAsync(request, token);
-
+            
             if (response.HttpStatusCode == HttpStatusCode.OK)
             {
                 Console.WriteLine($"\n\nPhoto {ImageName} was successfully uploaded to bucket 'scottlurowist'");
@@ -78,13 +78,14 @@ namespace S3Doodles
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             string filePath = Path.Combine(desktopPath, ImageName);
 
-            GetObjectResponse getObjResponse =
-                await client.GetObjectAsync(BucketName, ImageName, token);
+            using (GetObjectResponse getObjResponse =
+                await client.GetObjectAsync(BucketName, ImageName, token))
+            {
+                await getObjResponse.WriteResponseStreamToFileAsync(filePath,
+                    false, token);
 
-            await getObjResponse.WriteResponseStreamToFileAsync(filePath,
-                false, token);
-
-            Console.WriteLine($"Image {ImageName} was successfully downloaded to {desktopPath}.");
+                Console.WriteLine($"Image {ImageName} was successfully downloaded to {desktopPath}.");
+            }
         }
     }
 }
