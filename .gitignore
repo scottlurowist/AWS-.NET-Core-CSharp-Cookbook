@@ -1,0 +1,15 @@
+*.cekey
+*.sqlite
+bin/
+obj/
+*.suo
+*.user
+*.orig
+*.cache
+*.DotSettings
+*.zip
+*.odt#
+packages/
+
+
+

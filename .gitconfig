@@ -1,0 +1,25 @@
+[user]
+	
+	name = Scott Lurowist
+
+    email = scottlurowist@gmail.com
+
+#[core]
+#    filemode = false
+
+
+[alias]
+    br = branch
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+	s = status -s
+	ctrsclone = clone ssh://GITUser@ctrs.duckdns.org:883/depot/CTRS_Source.git
+	cm = checkout master
+	cmb = checkout lurowist/dev
+	c2r = checkout v2.0.0_release
+[core]
+	filemode = false
+	excludesfile = C:/Users/Scott/.gitignore
+[winUpdater]
+	recentlySeenVersion = 2.15.1.windows.2
